@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    screenie (0.0.1)
+    screenomat (0.0.1)
 
 GEM
   remote: http://rubygems.org/
@@ -30,4 +30,4 @@ DEPENDENCIES
   bundler (>= 1.0.0)
   mocha
   rspec
-  screenie!
+  screenomat!

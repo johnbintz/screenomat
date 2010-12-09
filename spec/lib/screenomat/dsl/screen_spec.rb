@@ -1,9 +1,9 @@
 require 'spec_helper'
-require 'screenie/dsl/screen'
+require 'screenomat/dsl/screen'
 
-describe Screenie::DSL::Screen do
+describe Screenomat::DSL::Screen do
   describe '#to_cmd' do
-    let(:screen) { Screenie::DSL::Screen.new(*params) }
+    let(:screen) { Screenomat::DSL::Screen.new(*params) }
 
     subject { screen }
 

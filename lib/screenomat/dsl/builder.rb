@@ -1,6 +1,6 @@
-require 'screenie/dsl/session'
+require 'screenomat/dsl/session'
 
-module Screenie
+module Screenomat
   module DSL
     class Builder
       attr_reader :sessions

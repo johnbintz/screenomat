@@ -1,9 +1,9 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path("../lib/screenie/version", __FILE__)
+require File.expand_path("../lib/screenomat/version", __FILE__)
 
 Gem::Specification.new do |s|
-  s.name        = "screenie"
-  s.version     = Screenie::VERSION
+  s.name        = "screenomat"
+  s.version     = Screenomat::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = []
   s.email       = []

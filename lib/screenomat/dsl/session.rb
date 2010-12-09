@@ -1,6 +1,6 @@
-require 'screenie/dsl/screen'
+require 'screenomat/dsl/screen'
 
-module Screenie
+module Screenomat
   module DSL
     class Session
       attr_accessor :name

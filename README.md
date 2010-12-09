@@ -1,11 +1,11 @@
-# screenie
+# screenomat
 
 You like screen, I like screen. Make getting those big multi-command line-running projects
-even easier to get started up with `screenie`.
+even easier to get started up with `screenomat`.
 
 ## How?
 
-Make a `.screenie` file in your app and write:
+Make a `.screenomat` file in your app and write:
 
 <pre>
 session do
@@ -19,7 +19,7 @@ end
 
 Then run:
 
-    screenie
+    screenomat
 
 _~~whoa~~_
 
@@ -43,23 +43,23 @@ end
 
 Then run:
 
-    screenie backend
+    screenomat backend
 
 or even:
 
-    screenie frontend
+    screenomat frontend
 
 ## Defaults?
 
-Like magic `screenie` bits anywhere? `~/.screenie` is what you want! Same syntax!
+Like magic `screenomat` bits anywhere? `~/.screenomat` is what you want! Same syntax!
 
 ## Ruby? DRY?
 
-Just like `Gemfile`, `*.gemspec`, and other modern Ruby things, `.screenie` is Ruby code. Like
+Just like `Gemfile`, `*.gemspec`, and other modern Ruby things, `.screenomat` is Ruby code. Like
 DRYing things? You can do it!
 
 <pre>
-class Screenie::DSL::Session
+class Screenomat::DSL::Session
   def whoa(&block)
     screen :title => "first"
     instance_eval(&block)

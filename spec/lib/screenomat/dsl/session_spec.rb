@@ -1,11 +1,11 @@
 require 'spec_helper'
-require 'screenie/dsl/session'
+require 'screenomat/dsl/session'
 
-describe Screenie::DSL::Session do
+describe Screenomat::DSL::Session do
   describe '#to_cmd' do
     context 'one screen' do
       subject {
-        Screenie::DSL::Session.new("my-session") { screen "test" }.to_cmd
+        Screenomat::DSL::Session.new("my-session") { screen "test" }.to_cmd
       }
 
       it { should == [
@@ -18,7 +18,7 @@ describe Screenie::DSL::Session do
 
     context 'two screens' do
       subject {
-        Screenie::DSL::Session.new("my-session") { screen "test"; screen "test2" }.to_cmd
+        Screenomat::DSL::Session.new("my-session") { screen "test"; screen "test2" }.to_cmd
       }
 
       it { should == [
@@ -35,7 +35,7 @@ describe Screenie::DSL::Session do
 
   describe 'from string' do
     subject {
-      Screenie::DSL::Session.new("my-session", <<-EOR).to_cmd
+      Screenomat::DSL::Session.new("my-session", <<-EOR).to_cmd
 screen "test"
       EOR
     }
@@ -50,7 +50,7 @@ screen "test"
 
   describe 'screen!' do
     subject {
-      Screenie::DSL::Session.new("my-session") { screen "test"; screen! "test2" }.to_cmd
+      Screenomat::DSL::Session.new("my-session") { screen "test"; screen! "test2" }.to_cmd
     }
 
     it { should == [

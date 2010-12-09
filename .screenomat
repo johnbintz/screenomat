@@ -1,0 +1,4 @@
+session do
+	screen! "bundle exec autotest", :title => 'autotest'
+	screen :title => 'command prompt'
+end

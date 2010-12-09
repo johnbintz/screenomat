@@ -1,4 +1,4 @@
-module Screenie
+module Screenomat
   module DSL
     class Screen
       attr_accessor :screen_id
