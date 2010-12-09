@@ -51,7 +51,7 @@ or even:
 
 ## Defaults?
 
-Like magic `screenie` bits anywhere? `~/.screenie' is what you want! Same syntax!
+Like magic `screenie` bits anywhere? `~/.screenie` is what you want! Same syntax!
 
 ## Ruby? DRY?
 
@@ -82,4 +82,4 @@ end
 
 ## What's left?
 
-A _bunch_. I write what I need. Feel like addings fun things and/or tests? Fork, hack, pull request. You know the drill.
+A _bunch_. I write what I need. Feel like adding fun things and/or tests? Fork, hack, pull request. You know the drill.
