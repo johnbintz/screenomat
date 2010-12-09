@@ -1,0 +1,8 @@
+session :first do
+	screen "bundle exec autotest", :title => 'autotest'
+	screen!
+end
+
+session :second do
+	screen %{echo "cats"}
+end

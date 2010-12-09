@@ -1,0 +1,54 @@
+PATH
+  remote: .
+  specs:
+    screenie (0.0.1)
+      thor
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    ZenTest (4.4.1)
+    aruba (0.2.7)
+      background_process
+      cucumber (~> 0.10.0)
+    autotest (4.4.6)
+      ZenTest (>= 4.4.1)
+    background_process (1.2)
+    builder (3.0.0)
+    cucumber (0.10.0)
+      builder (>= 2.1.2)
+      diff-lcs (~> 1.1.2)
+      gherkin (~> 2.3.2)
+      json (~> 1.4.6)
+      term-ansicolor (~> 1.0.5)
+    diff-lcs (1.1.2)
+    gherkin (2.3.2)
+      json (~> 1.4.6)
+      term-ansicolor (~> 1.0.5)
+    json (1.4.6)
+    mocha (0.9.10)
+      rake
+    rake (0.8.7)
+    rspec (2.2.0)
+      rspec-core (~> 2.2)
+      rspec-expectations (~> 2.2)
+      rspec-mocks (~> 2.2)
+    rspec-core (2.2.1)
+    rspec-expectations (2.2.0)
+      diff-lcs (~> 1.1.2)
+    rspec-mocks (2.2.0)
+    term-ansicolor (1.0.5)
+    thor (0.14.6)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  aruba
+  autotest
+  bundler (>= 1.0.0)
+  cucumber
+  mocha
+  rspec
+  screenie!
+  thor

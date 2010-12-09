@@ -1,0 +1,33 @@
+#!which ruby
+
+require 'getoptlong'
+require 'screenie/dsl/builder'
+
+opt = GetoptLong.new(
+  [ '--input', '-i', GetoptLong::REQUIRED_ARGUMENT ]
+)
+
+files = %w{.screenie ~/.screenie}
+
+opt.each do |key, value|
+  case key
+    when '--input'
+      files = [ value ]
+  end
+end
+
+session_name = ARGV.shift
+
+files.each do |path|
+  if File.exist?(target = File.expand_path(path))
+    sessions = Screenie::DSL::Builder.new(File.read(target))
+
+    if !session_name || session_name.empty?
+      session = sessions.first
+    else
+      session = sessions[session_name.to_sym]
+    end
+
+    session.to_cmd.each { |cmd| system cmd }
+  end
+end
